@@ -8,7 +8,7 @@ export default function Navbar() {
   const { user } = useAuthContext()
   return (
     <nav>
-      <h1>ST-Activity Goals</h1>
+      <h1>t-Books</h1>
       <ul>
         {user && <li><Link to="/">Home</Link></li>}
         {!user &&

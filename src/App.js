@@ -5,6 +5,7 @@ import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import Login from './pages/Login'
 import Signup from './pages/Signup'
+import Footer from './components/Footer'
 import { Redirect } from 'react-router-dom'
 
 function App() {
@@ -29,7 +30,9 @@ function App() {
               {!user && <Login />}
               {user && <Redirect to="/"/>}
             </Route>
+
           </Switch>
+          <Footer />
         </BrowserRouter>
       )}
     </div>

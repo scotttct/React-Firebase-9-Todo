@@ -13,8 +13,11 @@ export default function Home() {
  
   return (
     <div className="book-app">
+       <div className='container mt-4'>
+        <BookForm />
+      </div>
       {books && <BookList books={books} />}
-      <BookForm />
+     
     </div>
   );
 }
